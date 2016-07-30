@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+ znc:
+     image: "jimeh/znc"
+     ports:
+         - "6667:6667/udp"
+     volumes:
+         - "$HOME/.znc:/znc-data"
+
+#volumes:
+#    znc-data:
+#        driver: local
